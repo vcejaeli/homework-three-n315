@@ -71,8 +71,8 @@ p {
   }
   .nav__links li {
     display: inline-block;
-    padding: 0px 4px;
-    padding: 0px 4px;
+    padding: 0px 0px;
+    padding: 0px 0px;
   }
   .nav__links li a {
     font-weight: 600;
