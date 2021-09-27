@@ -1,0 +1,81 @@
+.gallery {
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 30px 14px 30px;
+    margin: 0 auto;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    &__title {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            color: #d1c799;
+            font-size: 25px;
+        }
+    }
+    &__wrap {
+        margin-bottom: 50px;
+    }
+    &__main {
+        height: 600px;
+        max-width: 1300px;
+        background-color: #d1c799;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__button {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+    &__cta {
+        border: 3px solid #d1c799;
+        border-radius: 20px;
+        background: none;
+        padding: 5px 10px;
+        color: #000;
+        font-weight: 400;
+        font-size: 15px;
+        transition: 1s;
+    }
+    &__cta:hover {
+        border-radius: 5px;
+        padding: 8px 13px;
+        font-size: 17px;
+    }
+    &__cta:active {
+        outline: none;
+        background: #231f20;
+        transition: .3s;
+    }
+
+    // one
+    &--one {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../asset/img/mountainStream.jpg);
+    }
+    &--two {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../asset/img/snowMountain.jpg);
+    }
+    &--three {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../asset/img/coldMountainPng.png);
+    }
+}

@@ -1,0 +1,91 @@
+.contact {
+    background-image: url(../asset/img/greenMountainsPng.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background: plum;
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    padding: 30px 30px 14px 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    &__main {
+        margin: 0 auto;
+        min-height: 650px;
+        width: 100%;
+    }
+    &__title {
+        margin: 0 auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        color: #d1c799;
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        line-height: 25px;
+    }
+    &__form {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+
+        .inputBoxes {
+            outline: none;
+            // max-width: 600px;
+            width: 600px;
+            color: #000;
+            border: 3px solid #231f20;
+            border-radius: 10px;
+            font-weight: 300;
+            font-size: 16px;
+            padding: 15px;
+            margin: 25px;
+        }
+        .formCta {
+            border: 3px solid #d1c799;
+            border-radius: 20px;
+            background: none;
+            padding: 5px 10px;
+            color: #000;
+            font-weight: 400;
+            font-size: 15px;
+            transition: 1s;
+        }
+        .formCta:hover {
+            border-radius: 5px;
+            padding: 8px 13px;
+            font-size: 17px;
+        }
+        .formCta:active {
+            outline: none;
+            background: #231f20;
+            transition: .5s;
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    .contact {
+        background: #fff;
+
+        &__main {
+            display: inline-block;
+        }
+        &__title {
+            line-height: 60px;
+            font-size: 20px;
+        }
+        &__form {
+            .inputBoxes {
+                width: 80%;
+            }
+        }
+    }
+}

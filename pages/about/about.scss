@@ -1,0 +1,105 @@
+.about {
+    background-image: url(../asset/img/brownGreenMountainsJpeg.jpg);
+    background-position: 0px -120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh);
+    max-width: 100%;
+
+    &__main {
+        max-width: 1000px;
+        min-height: 500px;
+        // background: rgba(255, 218, 185, 0.562);
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-left: 500px;
+
+    }
+    &__headerDesc {
+        
+    }
+    &--h1 {
+        color: #d1c799;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    &--h2 {
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    &__desc {
+        line-height: 30px;
+        overflow: auto;
+    }
+    // check out photography
+    &__photo {
+        // background: rgba(0, 255, 0, 0.37);
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+        // txt align centers btn
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1150px;
+    }
+    &__photoHeader {
+        color: #000;
+        text-transform: capitalize;
+    }
+    &--button {
+        border: 3px solid #d1c799;
+        border-radius: 20px;
+        background: none;
+        padding: 5px 10px;
+        color: #000;
+        font-weight: 400;
+        font-size: 15px;
+        transition: 1s;
+    }
+    &--button:hover {
+        border-radius: 5px;
+        padding: 8px 13px;
+        font-size: 17px;
+    }
+    &--button:active {
+        outline: none;
+    }
+}
+
+
+@media (max-width: 1450px) {
+    .about {
+
+        &__main {
+            margin: 0 auto;
+            // background: rgba(128, 0, 128, 0.4);
+            background: rgba(255, 255, 255, 0.6);
+            color: #000;
+            margin-bottom: 20px;
+            padding: 40px;
+        }
+        &__photo {
+            margin: 0 auto;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background: rgba(230, 230, 250, 0.514);
+        }
+        &--button {
+            font-weight: bolder;
+            border: 3px solid #000;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .about {
+        background: #fff;
+    }
+}

@@ -1,0 +1,125 @@
+.blog {
+    background: #fff;
+    min-height: calc(100vh);
+    max-width: 100%;
+    margin-bottom: 100px;
+
+    &__main {
+        // dont forget to add max to the whole canvas
+        margin: 0 auto;
+        padding: 50px;
+        height: calc(100vh);
+        max-width: 90%;
+        // background: rgba(136, 59, 72, 0.65);
+    }
+    &__titleCont {
+        margin: 0 auto;
+        // background: chartreuse;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    &__title {
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 5px;
+    }
+    &__post {
+        height: 200px;
+        max-width: 1000px;
+        margin: 0 auto;
+        align-items: center;
+        border: none;
+        margin-bottom: 50px;
+        // background: rgba(100, 148, 237, 0.452);
+    }
+    &__wrap {
+        height: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    &__img {
+        height: 100%;
+        width: 600px;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+        // background: rgba(250, 204, 18, 0.411);
+    }
+    &__headerDesc {
+        padding-top: 5px;
+        height: 100%;
+        max-width: 600px;
+        // text-overflow: auto;
+        overflow: auto;
+        color: #000;
+        // background: rgba(51, 255, 0, 0.507);
+
+        h1 {
+            font-size: 22px;
+            padding: 0 20px 0 20px;
+            margin-bottom: 5px;
+            color: #d1c799;
+            text-transform: capitalize;
+        }
+        p {
+            font-size: 16px;
+            padding: 20px;
+        }
+    }
+
+    // one
+    &--imgOne {
+        background-image: url(../asset/img/barrowView.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    // &--headerDescOne {
+    // }
+    // &--headerOne {
+    // }
+
+    // two
+    &--imgTwo {
+        background-image: url(../asset/img/mountainStream.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .blog {
+        background: #fff;
+
+        &__main {
+            background: #fff;
+        }
+        &__post {
+            margin-bottom: auto;
+            padding-bottom: 100px;
+        }
+        &__wrap {
+            
+        }
+        &__headerDesc {
+
+            width: 400px;
+            // background: yellow;
+
+            h1 {
+                text-overflow: auto;
+                font-size: 20px;
+            }
+            p {
+                display: none;
+            }
+        }
+    }
+}

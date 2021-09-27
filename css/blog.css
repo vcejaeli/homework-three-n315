@@ -1,0 +1,115 @@
+.blog {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../asset/img/greenMountainsPng.png);
+  min-height: calc(100vh);
+  max-width: 100%;
+  margin-bottom: 100px;
+}
+.blog__main {
+  margin: 0 auto;
+  padding: 50px;
+  height: calc(100vh);
+  max-width: 90%;
+}
+.blog__titleCont {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5px;
+}
+.blog__title {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.blog__post {
+  height: 200px;
+  max-width: 1000px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  margin-bottom: 50px;
+}
+.blog__wrap {
+  height: 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+.blog__img {
+  height: 100%;
+  width: 600px;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.blog__headerDesc {
+  padding-top: 5px;
+  height: 100%;
+  max-width: 600px;
+  overflow: auto;
+  color: #000;
+}
+.blog__headerDesc h1 {
+  font-size: 22px;
+  padding: 0 20px 0 20px;
+  margin-bottom: 5px;
+  color: #d1c799;
+  text-transform: capitalize;
+}
+.blog__headerDesc p {
+  font-size: 16px;
+  padding: 20px;
+}
+.blog--imgOne {
+  background-image: url(../asset/img/barrowView.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog--imgTwo {
+  background-image: url(../asset/img/mountainStream.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 900px) {
+  .blog {
+    background: #fff;
+  }
+  .blog__main {
+    background: #fff;
+  }
+  .blog__post {
+    margin-bottom: auto;
+    padding-bottom: 100px;
+  }
+  .blog__headerDesc {
+    width: 400px;
+  }
+  .blog__headerDesc h1 {
+    text-overflow: auto;
+    font-size: 20px;
+  }
+  .blog__headerDesc p {
+    display: none;
+  }
+}

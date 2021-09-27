@@ -1,0 +1,44 @@
+.home {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../asset/img/mountainPng.png);
+  min-height: calc(100vh);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.home__header {
+  text-transform: uppercase;
+  color: #d1c799;
+  max-width: 500px;
+  height: auto;
+}
+.home__header h1 {
+  font-size: 150px;
+  line-height: 140px;
+}
+.home__button {
+  border: 3px solid #d1c799;
+  border-radius: 20px;
+  background: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.home__button:hover {
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 150px;
+  margin-right: 0px;
+}
